@@ -10,6 +10,6 @@ document.getElementById('addTodoBtn').onclick=function(){
 	list.appendChild(li).innerHTML = input.value;
 	input.value = "";
 	}
-	return;
+
 }
 
