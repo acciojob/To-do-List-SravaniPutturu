@@ -4,7 +4,11 @@ const btn = document.getElementById('addTodoBtn');
 const list = document.getElementById('todoList');
 
 function myFunction(){
-   const li = document.createElement('li');
+	if(input.value == ""){
+		alert("Please fill to do list.")
+	}else{
+		const li = document.createElement('li');
 	list.appendChild(li).innerHTML = input.value;
+	}
 }
 
