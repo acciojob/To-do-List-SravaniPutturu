@@ -1,9 +1,8 @@
 //your code here
 const input = document.getElementById('newTodoInput');
-const btn = document.getElementById('addTodoBtn');
 const list = document.getElementById('todoList');
 
-function myFunction(){
+document.getElementById('addTodoBtn').onclick=function(){
 	if(input.value == ""){
 		alert("Please fill to do list.")
 	}else{
