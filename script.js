@@ -1,10 +1,10 @@
 //your code here
-const todoValue = document.getElementById('newTodoInput');
-const ol = document.getElementById('todoList');
-const btn = document.getElementById('addTodoBtn')
+var todoValue = document.getElementById('newTodoInput');
+var ol = document.getElementById('todoList');
+var btn = document.getElementById('addTodoBtn')
 function addTodo(){
-	if(todoValue.value != " "){
-	const li = document.createElement('li');
+	if(todoValue.value){
+	var li = document.createElement('li');
 		li.textContent = todoValue.value;
 	ol.appendChild(li);
 	todoValue.value = "";
