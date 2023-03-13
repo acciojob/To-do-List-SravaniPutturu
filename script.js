@@ -1,8 +1,8 @@
 //your code here
 const input = document.getElementById('newTodoInput');
 const ol = document.getElementById('todoList');
-
-document.getElementById('addTodoBtn').onclick=function(){
+const btn = document.getElementById('addTodoBtn')
+function addTodo(){
 	if(input.value){
 	const li = document.createElement('li');
 		li.innerHTML = input.value;
@@ -11,4 +11,4 @@ document.getElementById('addTodoBtn').onclick=function(){
 	}
 
 }
-
+btn.addEventListener('click',addTodo)
