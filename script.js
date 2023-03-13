@@ -4,9 +4,9 @@ var ol = document.getElementById('todoList');
 var btn = document.getElementById('addTodoBtn')
 function addTodo(){
 	if(todoValue.value){
-	var li = document.createElement('li');
-		li.textContent = todoValue.value;
-	ol.appendChild(li);
+	var abc = document.createElement('li');
+		abc.textContent = todoValue.value;
+	ol.appendChild(abc);
 	todoValue.value = "";
 	}
 
