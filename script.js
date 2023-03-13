@@ -7,7 +7,7 @@ function addTodo(){
 	const li = document.createElement('li');
 		li.textContent = todoValue.value;
 	ol.appendChild(li);
-	input.value = "";
+	todoValue.value = "";
 	}
 
 }
